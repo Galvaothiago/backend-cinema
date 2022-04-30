@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 const {defaultTransform} = require('./_utils');
-const {ObjectId} = require('mongoose').Types;
+const { Schema} = require('mongoose');
 
 const sessionSchema = new mongoose.Schema({
   dayWeek: {
@@ -18,19 +18,15 @@ const sessionSchema = new mongoose.Schema({
     maxlength: 10
   },
   movie: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: 'Movie',
       required: true
   },
   cinema: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: 'Cinema',
       required: true
   }
-});
-
-sessionSchema.virtual('id').get(function() {
-  return this._id;
 });
 
 sessionSchema.set('toJSON', {

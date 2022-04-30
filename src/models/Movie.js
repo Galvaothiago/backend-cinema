@@ -39,10 +39,6 @@ const movieSchema = new mongoose.Schema({
   },
 });
 
-movieSchema.virtual('id').get(function() {
-  return this._id;
-});
-
 movieSchema.set('toJSON', {
   transform: defaultTransform,
 });

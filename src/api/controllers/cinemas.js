@@ -8,8 +8,17 @@ const {notFound, conflict} = require('../errors');
 const {ObjectId} = require('mongoose').Types;
 
 router.get('/', asyncMiddleware(async (req, res) => {
-    const cinemas = await Cinema.find({}).populate('Session')
+    const cinemas = await Cinema.find({})
   res.json(cinemas);
+}));
+
+router.get('/:id', asyncMiddleware(async (req, res) => {
+  const cinema = await Cinema.findById(req.params.id);
+
+  console.log(cinema)
+  if (!cinema) throw notFound('Cinema not found!');
+
+  res.json(cinema);
 }));
 
 router.post('/', asyncMiddleware(async (req, res) => {
@@ -26,15 +35,6 @@ router.post('/', asyncMiddleware(async (req, res) => {
       {id: cinema.id});
   }));
 
-
-router.get('/:id', asyncMiddleware(async (req, res) => {
-  const cinema = await Cinema.findById(req.params.id);
-
-  console.log(cinema)
-  if (!cinema) throw notFound('Cinema not found!');
-
-  res.json(cinema);
-}));
 
 router.put('/:id', asyncMiddleware(async (req, res) => {
   const { body } = req;

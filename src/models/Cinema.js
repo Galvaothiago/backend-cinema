@@ -19,13 +19,9 @@ const cinemaSchema = new mongoose.Schema({
   state: {
     type: String, 
     required: true, 
-    min: 1, 
-    max: 999
+    minlength: 2, 
+    maxlength: 100
   }
-});
-
-cinemaSchema.virtual('id').get(function() {
-  return this._id;
 });
 
 cinemaSchema.set('toJSON', {
