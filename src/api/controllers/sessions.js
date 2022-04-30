@@ -34,22 +34,39 @@ router.get('/:cinemaId', asyncMiddleware(async (req, res) => {
     }
 }))
 
-// router.post('/', asyncMiddleware(async (req, res) => {
-//     try {
-//         const { body } = req;
-//         // const cinemaId = body?.cinema;
-//         // const movieId = body?.movie
+router.post('/', asyncMiddleware(async (req, res) => {
+    try {
+        const { body } = req;
 
-//         // const cinema = Cinema.findById(cinemaId);
-        
-//         const session = await Session.create(body)
+        const session = await Session.create(body)
 
-//         res.json(session);
+        res.json(session);
 
-//     } catch(err) {
-//         res.json(err);
-//     }
+    } catch(err) {
+        res.json(err);
+    }
 
-// }))
+}))
+
+// router.put('/:id', asyncMiddleware(async (req, res) => {
+//     const { body } = req;
+  
+//     const existMovieByName = await .findOne({
+//       _id: {$ne: new ObjectId(req.params.id)},
+//       nome: new RegExp('^' + body.nome + '$', 'i')});
+//     const movie = await Movie.findByIdAndUpdate(req.params.id, body);
+  
+//     if (existMovieByName) throw conflict('Already exist the movie with this name.');
+//     if (!movie) throw notFound('Movie nout found!');
+  
+//     res.status(204).send();
+//   }));
+  
+//   router.delete('/:id', asyncMiddleware(async (req, res) => {
+//     const movie = await Movie.findByIdAndDelete(req.params.id);
+  
+//     if (!movie) throw notFound('Movie nout found!');
+//     res.status(204).send();
+//   }));
 
 module.exports = router;

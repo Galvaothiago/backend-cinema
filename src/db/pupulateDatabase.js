@@ -96,7 +96,7 @@ const movie7 = new Movie({
 })
 
 const cinema1 = new Cinema({
-    name: 'Cinépolis', 
+    name: 'Cinepolis', 
     city: 'Campinas', 
     state: 'São Paulo'
 })

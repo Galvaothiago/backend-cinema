@@ -7,9 +7,45 @@ const asyncMiddleware = require('../middlewares/async-middleware');
 const {notFound, conflict} = require('../errors');
 const {ObjectId} = require('mongoose').Types;
 
+const transformText = require('../utils/formatText');
+
 router.get('/', asyncMiddleware(async (req, res) => {
-    const cinemas = await Cinema.find({})
-  res.json(cinemas);
+  try {
+    const { body } = req;
+
+    if(body.name) {
+      const name = transformText(body.name)
+      
+      const cinemaByName = await Cinema.find({
+        name
+      }).exec()
+
+      if(!cinemaByName) throw notFound("We couldn't find a Cinema with that name");
+
+      res.json(cinemaByName)
+      return;
+    }
+
+    if(body.city) {
+      const city = transformText(body.city)
+
+      const cinemaByCity = await Cinema.find({
+        city
+      })
+
+      if(!cinemaByCity) throw notFound("We still don't have a cinema registered in this city");
+
+      res.json(cinemaByCity)
+      return;
+    }
+    const cinemas = await Cinema.find()
+
+    if(!cinemas) throw notFound('ERROR')
+
+    res.json(cinemas)
+  } catch(err) {
+    res.json(err)
+  }
 }));
 
 router.get('/:id', asyncMiddleware(async (req, res) => {
