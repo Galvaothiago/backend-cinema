@@ -3,8 +3,6 @@
 const express = require('express');
 const router = express.Router();
 const Session = require('../../models/Session');
-const Movie = require('../../models/Movie');
-const Cinema = require('../../models/Cinema')
 
 const asyncMiddleware = require('../middlewares/async-middleware');
 const {notFound, conflict} = require('../errors');
@@ -48,25 +46,21 @@ router.post('/', asyncMiddleware(async (req, res) => {
 
 }))
 
-// router.put('/:id', asyncMiddleware(async (req, res) => {
-//     const { body } = req;
+router.put('/:id', asyncMiddleware(async (req, res) => {
+    const { body } = req;
   
-//     const existMovieByName = await .findOne({
-//       _id: {$ne: new ObjectId(req.params.id)},
-//       nome: new RegExp('^' + body.nome + '$', 'i')});
-//     const movie = await Movie.findByIdAndUpdate(req.params.id, body);
+    const session = await Session.findByIdAndUpdate(req.params.id, body);
+
+    if (!session) throw notFound('Movie nout found!');
   
-//     if (existMovieByName) throw conflict('Already exist the movie with this name.');
-//     if (!movie) throw notFound('Movie nout found!');
+    res.status(204).send();
+  }));
   
-//     res.status(204).send();
-//   }));
+  router.delete('/:id', asyncMiddleware(async (req, res) => {
+    const session = await Session.findByIdAndDelete(req.params.id);
   
-//   router.delete('/:id', asyncMiddleware(async (req, res) => {
-//     const movie = await Movie.findByIdAndDelete(req.params.id);
-  
-//     if (!movie) throw notFound('Movie nout found!');
-//     res.status(204).send();
-//   }));
+    if (!session) throw notFound('Movie nout found!');
+    res.status(204).send();
+  }));
 
 module.exports = router;
