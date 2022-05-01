@@ -164,10 +164,8 @@ const saveModelOnDatabase = async (model) => {
 }
 
 const createRelationship = async (sessions, movies, cinemas) => {
-    
     await saveModelOnDatabase(movies)
     await saveModelOnDatabase(cinemas)
-
     
     sessions.forEach((session) => {
         const randomMovie = pickRandomModelToCreateRelationship(movies)
