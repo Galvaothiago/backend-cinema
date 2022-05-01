@@ -30,69 +30,72 @@ const sessions = [
 
 const movie1 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    nome: 'Aladdin', 
-    genero: 'Fantasia, Romance', 
-    duracao: 130, 
-    classificacao: 10, 
-    lancamento: new Date(2019, 5, 23), 
-    sinopse: 'Um jovem humilde descobre uma lâmpada mágica',
+    name: 'Aladdin', 
+    genre: 'Fantasia, Romance', 
+    duration: 130, 
+    classification: 10, 
+    release: new Date(2019, 5, 23), 
+    synopsis: 'Um jovem humilde descobre uma lâmpada mágica',
 })
 
 const movie2 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    nome: 'Brightburn - Filho das Trevas', 
-    genero: 'Drama, Ficção Científica', 
-    duracao: 91, classificacao: 16 , 
-    lancamento: new Date(2019, 5, 23), 
-    sinopse: 'Quando uma criança alienígena cai no terreno de um casal da parte rural dos Estados Unidos'
+    name: 'Brightburn - Filho das Trevas', 
+    genre: 'Drama, Ficção Científica', 
+    duration: 91, 
+    classification: 16 , 
+    release: new Date(2019, 5, 23), 
+    synopsis: 'Quando uma criança alienígena cai no terreno de um casal da parte rural dos Estados Unidos'
 })
 
 const movie3 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    nome: 'Brightburn - Filho das Trevas', 
-    genero: 'Drama, Ficção Científica', 
-    duracao: 91, classificacao: 16 , 
-    lancamento: new Date(2019, 5, 23), 
-    sinopse: 'Quando uma criança alienígena cai no terreno de um casal da parte rural dos Estados Unidos'
+    name: 'Brightburn - Filho das Trevas', 
+    genre: 'Drama, Ficção Científica', 
+    duration: 91, 
+    classification: 16 , 
+    release: new Date(2019, 5, 23),
+    synopsis: 'Quando uma criança alienígena cai no terreno de um casal da parte rural dos Estados Unidos'
 })
 
 const movie4 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    nome: 'Hellboy', 
-    genero: 'Supernatural, Fantasia', 
-    duracao: 148, 
-    classificacao: 16, 
-    lancamento: new Date(2019, 5, 16), 
-    sinopse: 'Uma antiga feiticeira volta à vida decidida a vingar-se de uma traição do passado. Dividido entre o mundo sobrenatural e humano'
+    name: 'Hellboy', 
+    genre: 'Supernatural, Fantasia', 
+    duration: 148, 
+    classification: 16, 
+    release: new Date(2019, 5, 16), 
+    synopsis: 'Uma antiga feiticeira volta à vida decidida a vingar-se de uma traição do passado. Dividido entre o mundo sobrenatural e humano'
 })
 
 const movie5 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    nome: 'Kardec: A História por Trás do Nome', 
-    genero: 'Drama, Religião', 
-    duracao: 110, 
-    classificacao: 12, 
-    lancamento: new Date(2019, 5, 16), 
-    sinopse: 'A história do educador francês Hypolite Leon Denizard Rivail' 
+    name: 'Kardec: A História por Trás do Nome', 
+    genre: 'Drama, Religião', 
+    duration: 110, 
+    classification: 12, 
+    release: new Date(2019, 5, 16), 
+    synopsis: 'A história do educador francês Hypolite Leon Denizard Rivail' 
 })
 
 const movie6 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    nome: 'Rocketman', 
-    genero: 'Drama / Biografia', 
-    duracao: 121, 
-    classificacao: 16, 
-    lancamento: new Date(2019, 5, 30), sinopse: 'Extremamente talentoso mas muito tímido'
+    name: 'Rocketman', 
+    genre: 'Drama / Biografia', 
+    duration: 121, 
+    classification: 16, 
+    release: new Date(2019, 5, 30), 
+    synopsis: 'Extremamente talentoso mas muito tímido'
 })
 
 const movie7 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    nome: 'Vingadores: Ultimato', 
-    genero: 'Fantasia / Filme', 
-    duracao: 182, 
-    classificacao: 12, 
-    lancamento: new Date(2019, 4, 25), 
-    sinopse: 'Após Thanos eliminar metade das criaturas vivas' 
+    name: 'Vingadores: Ultimato', 
+    genre: 'Fantasia / Filme', 
+    duration: 182, 
+    classification: 12, 
+    release: new Date(2019, 4, 25), 
+    synopsis: 'Após Thanos eliminar metade das criaturas vivas' 
 })
 
 const cinema1 = new Cinema({

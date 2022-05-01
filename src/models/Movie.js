@@ -4,35 +4,35 @@ const mongoose = require('mongoose');
 const {defaultTransform} = require('./_utils');
 
 const movieSchema = new mongoose.Schema({
-  nome: {
+  name: {
     type: String, 
     required: true, 
     minlength: 2, 
     maxlength: 100
   },
-  genero: {
+  genre: {
     type: String, 
     required: true, 
     minlength: 2, 
     maxlength: 100
   },
-  duracao: {
+  duration: {
     type: Number, 
     required: true, 
     min: 1, 
     max: 999
   },
-  classificacao: {
+  classification: {
     type: Number, 
     required: true, 
     min: 0, 
     max: 99
   },
-  lancamento: {
+  release: {
     type: Date, 
     required: true
   },
-  sinopse: {
+  synopsis: {
     type: String, 
     required: true, 
     minlength: 2
