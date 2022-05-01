@@ -154,8 +154,10 @@ const pickRandomModelToCreateRelationship = (arr) => {
 const saveModelOnDatabase = async (model) => {
     model.forEach((model) => {
         model.save((err) => {
-            if(err) console.log("error when trying save on database")
-
+            if(err) {
+                console.log("error when trying save on database");
+                return;
+            }
             console.log("saved models")
         })
     })
@@ -178,8 +180,10 @@ const createRelationship = async (sessions, movies, cinemas) => {
             movie: randomMovie.id,
             cinema: randomCinema.id
         }).save((err) => {
-            if(err) console.log(err)
-
+            if(err) {
+                console.log(err);
+                return;
+            }
             console.log('created sessions with your associations successfully!')
         })
     })
