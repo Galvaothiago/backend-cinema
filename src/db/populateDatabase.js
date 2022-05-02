@@ -4,6 +4,7 @@ const Cinema = require('../models/Cinema');
 const Session = require('../models/Session');
 const Movie = require('../models/Movie');
 
+
 const sessions = [
     { dayWeek: 'Domingo', schedule: '18:00'},
     { dayWeek: 'Domingo', schedule: '19:00'},
@@ -50,12 +51,12 @@ const movie2 = new Movie({
 
 const movie3 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    name: 'Brightburn - Filho das Trevas', 
-    genre: 'Drama, Ficção Científica', 
-    duration: 91, 
-    classification: 16 , 
-    release: new Date(2019, 5, 23),
-    synopsis: 'Quando uma criança alienígena cai no terreno de um casal da parte rural dos Estados Unidos'
+    name: 'Godzilla II: Rei dos Monstros', 
+    genre: 'Fantasia, Ficção Científica', 
+    duration: 132, 
+    classification: 12, 
+    release: new Date(2019, 5, 30),
+    synopsis: 'Na sequência do sucesso mundial de "Godzilla" e "Kong: A Ilha da Caveira"'
 })
 
 const movie4 = new Movie({
