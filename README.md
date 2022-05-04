@@ -1,5 +1,4 @@
 <h1>Desafio Técnico - Backend em Node + Express</<h2>
-<br />
 
 <h2>📋 Descrição</h2>
 <p>Projeto desenvolvido para vaga de Desenvolvedor Full Stack, com o intuito de mostrar o conhecimento em NodeJs + Express. 
@@ -23,10 +22,7 @@ ou
       
       npm install
 
-
-<br/>
- <h2>✈️ rodando o projeto</h2>
-<br/>
+<h2>✈️ rodando o projeto</h2>
       
 modo desenvolvimento (a cada alteração o servidor reiniciará para mostrar as mudanças):
       
@@ -56,8 +52,7 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 <h2>Endpoints</h2>
 
 <p>Seguindo os padrões de uma Rest API, onde em cima de um endpoints aplicamos os verbos 'http' para realizar as operações basicas de cadatro, atualização e deleção </p>
-      
-<br/>
+     
 <h3>"/movies"</h3>
 <p> quando realizamos um 'get' no endpoint citado, estamos com a intenção de obter dados. Segue um exemplo da estrutura de dados fornecida pela API quando realizado esta operação:</p>
         
@@ -67,9 +62,9 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 <h3>"/cinemas"</h3>
 <p>Todos endpoints segue o mesmo padrão, aceitando os metodos 'get', 'post', 'delete' e 'put' para obter dados, criar, deletar e atualizar, respectivamente:</p>
         
-<img width="544" alt="image" src="https://user-images.githubusercontent.com/72774408/166745656-11a514eb-1fdf-49b2-9d30-aeca7242ea31.png"/>
+<img width="246" alt="image" src="https://user-images.githubusercontent.com/72774408/166753817-a7ea5994-df42-423c-a722-1cdf03393899.png">
       
-<p>Podemos nesse mewmo endpoint buscar um Cinema pelo seu nome (devolvendo um unico recurso, caso encontr) ou pela cidade (devolvendo uma lista de recursos que correspondem a busca):<p/>
+<p>Podemos nesse mesmo endpoint buscar um Cinema pelo seu nome (devolvendo um unico recurso, caso encontre) ou pela cidade (devolvendo uma lista de recursos que correspondem a busca):<p/>
 <img width="649" alt="image" src="https://user-images.githubusercontent.com/72774408/166749590-58ee29d8-d6de-4d45-9dd8-5f66454a9687.png"/>
 <br/>
 <img width="553" alt="image" src="https://user-images.githubusercontent.com/72774408/166749778-5f403f4a-0a4e-4350-9878-bc3956fe8931.png"/>
