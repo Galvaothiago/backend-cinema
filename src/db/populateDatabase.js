@@ -51,7 +51,7 @@ const movie2 = new Movie({
 
 const movie3 = new Movie({
     id: new mongoose.Types.ObjectId(),
-    name: 'Godzilla II: Rei dos Monstros', 
+    name: 'Godzilla-2: Rei dos Monstros', 
     genre: 'Fantasia, Ficção Científica', 
     duration: 132, 
     classification: 12, 
@@ -82,7 +82,7 @@ const movie5 = new Movie({
 const movie6 = new Movie({
     id: new mongoose.Types.ObjectId(),
     name: 'Rocketman', 
-    genre: 'Drama / Biografia', 
+    genre: 'Drama, Biografia', 
     duration: 121, 
     classification: 16, 
     release: new Date(2019, 5, 30), 
@@ -92,7 +92,7 @@ const movie6 = new Movie({
 const movie7 = new Movie({
     id: new mongoose.Types.ObjectId(),
     name: 'Vingadores: Ultimato', 
-    genre: 'Fantasia / Filme', 
+    genre: 'Fantasia, Filme', 
     duration: 182, 
     classification: 12, 
     release: new Date(2019, 4, 25), 
