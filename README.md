@@ -13,4 +13,10 @@ onde as sessões estão relacionadas com os filmes e cinemas</p>
 
 clonar repositorio:
       
-      git clone link_do_repositório
+      git clone https://github.com/Galvaothiago/backend-cinema.git
+      
+instalar dependências:
+      
+      yarn 
+ ou
+      npm install
