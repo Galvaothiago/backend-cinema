@@ -74,5 +74,15 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
       
 <img width="543" alt="image" src="https://user-images.githubusercontent.com/72774408/166746137-8508033a-79c0-4489-beea-9344d8660648.png" />
 
+<br/>
+<h3>/sessions</h3>
+<p>Esse endpoint possui duas forma de visualização, podemos obter a lista de 'sessions' disponivel no banco de dados, trazendo as informações da sessão e a referencia do Cinema e do Filme vinculado:</p>
+      
+<img width="547" alt="image" src="https://user-images.githubusercontent.com/72774408/166747677-bcf00ea0-109b-4c16-96b0-0c36879b7ca5.png"/>
+<br/>
+<p>Podemos tambem passar o ID do cinema para obter as informações consolidada do Cinema, filme e sessão:</p>
+<img width="578" alt="image" src="https://user-images.githubusercontent.com/72774408/166748229-c0ec6e2d-d012-4017-b923-df6604e05269.png"/>
+
+
 
 
