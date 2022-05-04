@@ -64,7 +64,7 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
         
 <img width="246" alt="image" src="https://user-images.githubusercontent.com/72774408/166753817-a7ea5994-df42-423c-a722-1cdf03393899.png">
       
-<p>Podemos nesse mesmo endpoint buscar um Cinema pelo seu nome (devolvendo um unico recurso, caso encontre) ou pela cidade (devolvendo uma lista de recursos que correspondem a busca):<p/>
+<p>Podemos nesse mesmo endpoint buscar um Cinema pelo seu nome (devolvendo um unico recurso, caso encontre) ou pela cidade (devolvendo uma lista de recursos que correspondem a busca):</p>
 <img width="649" alt="image" src="https://user-images.githubusercontent.com/72774408/166749590-58ee29d8-d6de-4d45-9dd8-5f66454a9687.png"/>
 <br/>
 <img width="553" alt="image" src="https://user-images.githubusercontent.com/72774408/166749778-5f403f4a-0a4e-4350-9878-bc3956fe8931.png"/>
