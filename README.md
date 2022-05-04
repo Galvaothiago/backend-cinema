@@ -17,6 +17,8 @@ clonar repositorio:
       
 instalar dependências:
       
-      yarn 
- ou
+      yarn
+      
+ou
+      
       npm install
