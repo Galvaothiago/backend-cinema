@@ -53,13 +53,13 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 - [nodemon](https://nodemon.io/)
       
 
-  <h2>Endpoints</h2>
-  <br/>
-  <p>Seguindo os padrões de uma Rest API, onde em cima de um endpoints aplicamos os verbos 'http' para realizar as operações basicas de cadatro, atualização e deleção </p>
+<h2>Endpoints</h2>
+<br/>
+<p>Seguindo os padrões de uma Rest API, onde em cima de um endpoints aplicamos os verbos 'http' para realizar as operações basicas de cadatro, atualização e deleção </p>
       
-  <br/>
-  <h3>/movies</h3>
-  <p> quando realizamos um 'get' no endpoint citado, estamos com a intenção de obter dados. Segue um exemplo da estrutura de dados fornecida pela API quando realizado esta operação:
+<br/>
+<h3>/movies</h3>
+<p> quando realizamos um 'get' no endpoint citado, estamos com a intenção de obter dados. Segue um exemplo da estrutura de dados fornecida pela API quando realizado esta operação:
         
 <img width="544" alt="image" src="https://user-images.githubusercontent.com/72774408/166744477-661cf571-f267-46ab-903a-40aa5e9d3ce4.png">
 
