@@ -70,7 +70,7 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 <img width="544" alt="image" src="https://user-images.githubusercontent.com/72774408/166745656-11a514eb-1fdf-49b2-9d30-aeca7242ea31.png"/>
 
 <br />
-<p>Exemplo do metodo 'delete' aplicado neste endpoint, adicionamos o ID do recurso a ser deletado e recebos um status '204 no content' indicando que o recurso foi deletedo corretamente:
+<p>Exemplo do metodo 'delete' aplicado neste endpoint, adicionamos o ID do recurso a ser deletado e recebos um status '204 no content' indicando que o recurso foi deletedo corretamente:</p>
       
 <img width="543" alt="image" src="https://user-images.githubusercontent.com/72774408/166746137-8508033a-79c0-4489-beea-9344d8660648.png" />
 
