@@ -25,8 +25,8 @@ ou
 
 
 <br/>
-rodando o projeto na máquina:
-<br />
+ <h2>rodando o projeto na máquina</h2>
+<br/>
       
 modo desenvolvimento (a cada alteração o servidor reiniciará para mostrar as mudanças):
       
