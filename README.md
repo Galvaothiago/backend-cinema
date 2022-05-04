@@ -60,3 +60,6 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
   <br/>
   <h3>/movies</h3>
   <p> quando realizamos um 'get' no endpoint citado, estamos com a intenção de obter dados. Segue um exemplo da estrutura de dados fornecida pela API quando realizado esta operação:
+        
+<img width="544" alt="image" src="https://user-images.githubusercontent.com/72774408/166744477-661cf571-f267-46ab-903a-40aa5e9d3ce4.png">
+
