@@ -54,3 +54,9 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
       
 
   <h2>Endpoints</h2>
+  <br/>
+  <p>Seguindo os padrões de uma Rest API, onde em cima de um endpoints aplicamos os verbos 'http' para realizar as operações basicas de cadatro, atualização e deleção </p>
+      
+  <br/>
+  <h3>/movies</h3>
+  <p> quando realizamos um 'get' no endpoint citado, estamos com a intenção de obter dados. Segue um exemplo da estrutura de dados fornecida pela API quando realizado esta operação:
