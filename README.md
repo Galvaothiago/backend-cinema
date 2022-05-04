@@ -29,8 +29,10 @@ rodando o projeto na máquina:
 <br />
       
 modo desenvolvimento (a cada alteração o servidor reiniciará para mostrar as mudanças):
+      
       yarn dev
       
 modo "produção" (as alterações no código não vão refletir no servidor, sendo necessário reiniciar manualmente):
+      
       yarn start 
  
