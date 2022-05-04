@@ -40,10 +40,13 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 <br/>
 <h2>🔧 Tecnologias utilizadas</h2>
       
-[NodeJS](https://nodejs.org/api/fs.html)
+- [NodeJS](https://nodejs.org/api/fs.html)
 <br />
-[Express](https://expressjs.com)
-[momentJs](https://momentjs.com/)
-[mongoose](https://mongoosejs.com/)
-[mongoBD](https://www.mongodb.com/)
+- [Express](https://expressjs.com)
+<br />
+- [momentJs](https://momentjs.com/)
+<br />
+- [mongoose](https://mongoosejs.com/)
+<br />
+- [mongoBD](https://www.mongodb.com/)
       
