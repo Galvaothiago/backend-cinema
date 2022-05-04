@@ -41,12 +41,12 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 <h2>🔧 Tecnologias utilizadas</h2>
       
 - [NodeJS](https://nodejs.org/api/fs.html)
-<br />
+      <br />
 - [Express](https://expressjs.com)
-<br />
+      <br />
 - [momentJs](https://momentjs.com/)
-<br />
+      <br />
 - [mongoose](https://mongoosejs.com/)
-<br />
+      <br />
 - [mongoBD](https://www.mongodb.com/)
       
