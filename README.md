@@ -25,7 +25,7 @@ ou
 
 
 <br/>
- <h2>rodando o projeto na máquina</h2>
+ <h2>✈️ rodando o projeto</h2>
 <br/>
       
 modo desenvolvimento (a cada alteração o servidor reiniciará para mostrar as mudanças):
@@ -36,3 +36,9 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
       
       yarn start 
  
+      
+<br/>
+<h2>🔧 Tecnologias utilizadas</h2>
+ [NodeJS](https://nodejs.org/api/fs.html)
+ [Express](https://expressjs.com/)
+      
