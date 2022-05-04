@@ -54,20 +54,25 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
       
 
 <h2>Endpoints</h2>
-<br/>
+
 <p>Seguindo os padrões de uma Rest API, onde em cima de um endpoints aplicamos os verbos 'http' para realizar as operações basicas de cadatro, atualização e deleção </p>
       
 <br/>
-<h3>/movies</h3>
+<h3>"/movies"</h3>
 <p> quando realizamos um 'get' no endpoint citado, estamos com a intenção de obter dados. Segue um exemplo da estrutura de dados fornecida pela API quando realizado esta operação:</p>
         
 <img width="544" alt="image" src="https://user-images.githubusercontent.com/72774408/166744477-661cf571-f267-46ab-903a-40aa5e9d3ce4.png"/>
 
 <br/>
-<h3>/cinemas</h3>
+<h3>"/cinemas"</h3>
 <p>Todos endpoints segue o mesmo padrão, aceitando os metodos 'get', 'post', 'delete' e 'put' para obter dados, criar, deletar e atualizar, respectivamente:</p>
         
 <img width="544" alt="image" src="https://user-images.githubusercontent.com/72774408/166745656-11a514eb-1fdf-49b2-9d30-aeca7242ea31.png"/>
+      
+<p>Podemos nesse mewmo endpoint buscar um Cinema pelo seu nome (devolvendo um unico recurso, caso encontr) ou pela cidade (devolvendo uma lista de recursos que correspondem a busca):<p/>
+<img width="649" alt="image" src="https://user-images.githubusercontent.com/72774408/166749590-58ee29d8-d6de-4d45-9dd8-5f66454a9687.png"/>
+<br/>
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/72774408/166749778-5f403f4a-0a4e-4350-9878-bc3956fe8931.png"/>
 
 <br />
 <p>Exemplo do metodo 'delete' aplicado neste endpoint, adicionamos o ID do recurso a ser deletado e recebos um status '204 no content' indicando que o recurso foi deletedo corretamente:</p>
@@ -75,7 +80,7 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 <img width="543" alt="image" src="https://user-images.githubusercontent.com/72774408/166746137-8508033a-79c0-4489-beea-9344d8660648.png" />
 
 <br/>
-<h3>/sessions</h3>
+<h3>"/sessions"</h3>
 <p>Esse endpoint possui duas forma de visualização, podemos obter a lista de 'sessions' disponivel no banco de dados, trazendo as informações da sessão e a referencia do Cinema e do Filme vinculado:</p>
       
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/72774408/166747677-bcf00ea0-109b-4c16-96b0-0c36879b7ca5.png"/>
