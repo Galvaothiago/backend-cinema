@@ -39,6 +39,7 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
       
 <br/>
 <h2>🔧 Tecnologias utilizadas</h2>
-      <p>[NodeJS](https://nodejs.org/api/fs.html\)</p>
-      [Express](https://expressjs.com\)
+      
+[NodeJS](https://nodejs.org/api/fs.html\)
+[Express](https://expressjs.com\)
       
