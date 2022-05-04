@@ -1,4 +1,4 @@
-<h1>Desafio Técnico - Backend em Node + Expresse</<h2>
+<h1>Desafio Técnico - Backend em Node + Express</<h2>
 <br />
 
 <h2>📋 Descrição</h2>
@@ -49,4 +49,8 @@ modo "produção" (as alterações no código não vão refletir no servidor, se
 - [mongoose](https://mongoosejs.com/)
       <br />
 - [mongoBD](https://www.mongodb.com/)
+      <br />
+- [nodemon](https://nodemon.io/)
       
+
+  <h2>Endpoints</h2>
