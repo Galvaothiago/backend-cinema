@@ -34,7 +34,7 @@ const movie1 = new Movie({
     name: 'Aladdin', 
     genre: 'Fantasia, Romance', 
     duration: 130, 
-    classification: 10, 
+    classification: '10', 
     release: new Date(2019, 5, 23), 
     synopsis: 'Um jovem humilde descobre uma lâmpada mágica',
 })
@@ -44,7 +44,7 @@ const movie2 = new Movie({
     name: 'Brightburn - Filho das Trevas', 
     genre: 'Drama, Ficção Científica', 
     duration: 91, 
-    classification: 16 , 
+    classification: '16' , 
     release: new Date(2019, 5, 23), 
     synopsis: 'Quando uma criança alienígena cai no terreno de um casal da parte rural dos Estados Unidos'
 })
@@ -54,7 +54,7 @@ const movie3 = new Movie({
     name: 'Godzilla-2: Rei dos Monstros', 
     genre: 'Fantasia, Ficção Científica', 
     duration: 132, 
-    classification: 12, 
+    classification: '12', 
     release: new Date(2019, 5, 30),
     synopsis: 'Na sequência do sucesso mundial de "Godzilla" e "Kong: A Ilha da Caveira"'
 })
@@ -64,7 +64,7 @@ const movie4 = new Movie({
     name: 'Hellboy', 
     genre: 'Supernatural, Fantasia', 
     duration: 148, 
-    classification: 16, 
+    classification: '16', 
     release: new Date(2019, 5, 16), 
     synopsis: 'Uma antiga feiticeira volta à vida decidida a vingar-se de uma traição do passado. Dividido entre o mundo sobrenatural e humano'
 })
@@ -74,7 +74,7 @@ const movie5 = new Movie({
     name: 'Kardec: A História por Trás do Nome', 
     genre: 'Drama, Religião', 
     duration: 110, 
-    classification: 12, 
+    classification: '12', 
     release: new Date(2019, 5, 16), 
     synopsis: 'A história do educador francês Hypolite Leon Denizard Rivail' 
 })
@@ -84,7 +84,7 @@ const movie6 = new Movie({
     name: 'Rocketman', 
     genre: 'Drama, Biografia', 
     duration: 121, 
-    classification: 16, 
+    classification: '16', 
     release: new Date(2019, 5, 30), 
     synopsis: 'Extremamente talentoso mas muito tímido'
 })
@@ -94,7 +94,7 @@ const movie7 = new Movie({
     name: 'Vingadores: Ultimato', 
     genre: 'Fantasia, Filme', 
     duration: 182, 
-    classification: 12, 
+    classification: '12', 
     release: new Date(2019, 4, 25), 
     synopsis: 'Após Thanos eliminar metade das criaturas vivas' 
 })

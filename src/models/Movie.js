@@ -23,10 +23,10 @@ const movieSchema = new mongoose.Schema({
     max: 999
   },
   classification: {
-    type: Number, 
+    type: String, 
     required: true, 
-    min: 0, 
-    max: 99
+    minlength: 1, 
+    maxlength: 3
   },
   release: {
     type: Date, 
@@ -34,9 +34,10 @@ const movieSchema = new mongoose.Schema({
   },
   synopsis: {
     type: String, 
-    required: true, 
-    minlength: 2
-  },
+    required: true,
+    minlength: 2, 
+    maxlength: 100
+  }
 });
 
 movieSchema.set('toJSON', {

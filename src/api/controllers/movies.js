@@ -22,16 +22,21 @@ router.get('/:id', asyncMiddleware(async (req, res) => {
 
 
 router.post('/', asyncMiddleware(async (req, res) => {
-  const { body } = req;
+  try {
+    const { body } = req;
 
-  const existMovieByName = await Movie.findOne({
-    nome: new RegExp('^' + body.nome + '$', 'i')});
+    const existMovieByName = await Movie.findOne({
+      name: new RegExp('^' + body.name + '$', 'i')});
+  
+    if (existMovieByName) throw conflict('Already exist the movie with this name.');
+  
+    const movie = await Movie.create(body);
+    res.status(201).location(`/movies/${movie.id}`).json({id: movie.id});
 
-  if (existMovieByName) throw conflict('Already exist the movie with this name.');
+  } catch (err) {
+    res.status(409).json(err)
+  }
 
-  const movie = await Movie.create(body);
-
-  res.status(201).location(`/movies/${movie.id}`).json({id: filme.id});
 
 }));
 
