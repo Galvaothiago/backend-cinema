@@ -23,14 +23,20 @@ const movieSchema = new mongoose.Schema({
     max: 999
   },
   classification: {
-    type: Number, 
-    required: true, 
-    min: 0, 
-    max: 99
+    type: String, 
+    required: true,
+    minlength: 1, 
+    maxlength: 3
   },
   release: {
     type: Date, 
     required: true
+  },
+  pathImg: {
+    type: String,
+    required: true,
+    minlength: 10,
+    maxlength: 200
   },
   synopsis: {
     type: String, 
