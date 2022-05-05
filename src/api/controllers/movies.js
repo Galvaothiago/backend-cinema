@@ -22,8 +22,9 @@ router.get('/:id', asyncMiddleware(async (req, res) => {
 
 
 router.post('/', asyncMiddleware(async (req, res) => {
+  const { body } = req; 
+
   try {
-    const { body } = req;
 
     const existMovieByName = await Movie.findOne({
       name: new RegExp('^' + body.name + '$', 'i')});
@@ -31,12 +32,12 @@ router.post('/', asyncMiddleware(async (req, res) => {
     if (existMovieByName) throw conflict('Already exist the movie with this name.');
   
     const movie = await Movie.create(body);
+  
     res.status(201).location(`/movies/${movie.id}`).json({id: movie.id});
 
-  } catch (err) {
-    res.status(409).json(err)
+  } catch(err) {
+    res.json(err)
   }
-
 
 }));
 
@@ -56,10 +57,16 @@ router.put('/:id', asyncMiddleware(async (req, res) => {
 }));
 
 router.delete('/:id', asyncMiddleware(async (req, res) => {
-  const movie = await Movie.findByIdAndDelete(req.params.id);
+  try {
+    const movie = await Movie.findByIdAndDelete(req.params.id);
+    
+    if (!movie) throw notFound('Movie nout found!');
+    
+    res.status(204).send();
+  } catch(err) {
+    res.status(404).json(err)
+  }
 
-  if (!movie) throw notFound('Movie nout found!');
-  res.status(204).send();
 }));
 
 module.exports = router;
