@@ -25,7 +25,6 @@ router.post('/', asyncMiddleware(async (req, res) => {
   const { body } = req; 
 
   try {
-
     const existMovieByName = await Movie.findOne({
       name: new RegExp('^' + body.name + '$', 'i')});
   
