@@ -51,7 +51,6 @@ router.get('/', asyncMiddleware(async (req, res) => {
 router.get('/:id', asyncMiddleware(async (req, res) => {
   const cinema = await Cinema.findById(req.params.id);
 
-  console.log(cinema)
   if (!cinema) throw notFound('Cinema not found!');
 
   res.json(cinema);
