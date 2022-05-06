@@ -5,8 +5,8 @@ const router = express.Router();
 const Session = require('../../models/Session');
 
 const asyncMiddleware = require('../middlewares/async-middleware');
-const {notFound, conflict} = require('../errors');
-const {ObjectId} = require('mongoose').Types;
+const { notFound } = require('../errors');
+const { ObjectId } = require('mongoose').Types;
 
 router.get('/', asyncMiddleware(async (req, res) => {
     try {
@@ -20,7 +20,7 @@ router.get('/', asyncMiddleware(async (req, res) => {
 
 router.get('/:cinemaId', asyncMiddleware(async (req, res) => {
     try {
-        const session = await Session.findOne(
+        const session = await Session.find(
             {cinema: new ObjectId(req.params.cinemaId)}
         ).populate(['movie', 'cinema'])
 
@@ -48,19 +48,30 @@ router.post('/', asyncMiddleware(async (req, res) => {
 
 router.put('/:id', asyncMiddleware(async (req, res) => {
     const { body } = req;
-  
-    const session = await Session.findByIdAndUpdate(req.params.id, body);
 
-    if (!session) throw notFound('Movie nout found!');
+    try {
+        const session = await Session.findByIdAndUpdate(req.params.id, body);
+        if (!session) throw notFound('Movie nout found!');
+
+        res.status(204).send();
+    } catch(err) {
+        res.json(err)
+    }
   
-    res.status(204).send();
+
+  
   }));
   
   router.delete('/:id', asyncMiddleware(async (req, res) => {
-    const session = await Session.findByIdAndDelete(req.params.id);
+    try {
+        const session = await Session.findByIdAndDelete(req.params.id);
+        if (!session) throw notFound('Movie nout found!');
+
+        res.status(204).send();
+    } catch(err) {
+        res.json(err)
+    }
   
-    if (!session) throw notFound('Movie nout found!');
-    res.status(204).send();
   }));
 
 module.exports = router;
